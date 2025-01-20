@@ -1,0 +1,35 @@
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["", "", 0, "", "1"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_SUB_CATEGORIA` FOREIGN KEY (`cod_sub_categoria`) REFERENCES `video_sub_categoria` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["", "", 0, "", "1"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_SUB_CATEGORIA` FOREIGN KEY (`cod_sub_categoria`) REFERENCES `video_sub_categoria` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["", "", 0, "", "1"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_SUB_CATEGORIA` FOREIGN KEY (`cod_sub_categoria`) REFERENCES `video_sub_categoria` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["", "", 0, "", "1"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_SUB_CATEGORIA` FOREIGN KEY (`cod_sub_categoria`) REFERENCES `video_sub_categoria` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["", "", 0, "", "1"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_SUB_CATEGORIA` FOREIGN KEY (`cod_sub_categoria`) REFERENCES `video_sub_categoria` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+

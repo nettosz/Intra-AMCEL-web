@@ -1,0 +1,169 @@
+@media (max-width: 1300px) {
+  #menu {
+    width: 80px;
+    height: 100%;
+  }
+  .column-right {
+    width: 100%;
+    margin-left: 83px;
+  }
+  #menu div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    vertical-align: middle;
+  }
+  #menu div label {
+    width: 150px;
+    visibility: hidden;
+    position: absolute;
+    margin-left: 50px;
+    z-index: 1;
+  }
+
+  #menu ul li:hover label {
+    visibility: visible;
+    padding: 5px;
+    margin-left: 62px;
+    border-radius: 3px;
+    color: white;
+    background: linear-gradient(
+      to right,
+      rgba(129, 201, 177, 0.9),
+      rgba(145, 182, 147, 0.8)
+    );
+  }
+
+  #menu label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent green transparent transparent;
+  }
+
+  .card__enquets {
+    width: 100%;
+  }
+  .container__news--home {
+    width: 100%;
+  }
+  .card__project {
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  #menu {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: -500px;
+    z-index: 100;
+    top: 55px;
+    background: linear-gradient(
+      to right,
+      rgba(129, 201, 177, 0.952),
+      rgba(145, 182, 147, 0.849)
+    );
+  }
+
+  .container-template .column-right {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+  #menu ul {
+    overflow-y: scroll;
+    height: 400px;
+  }
+  #menu ul li {
+    background: none;
+    color: white;
+  }
+
+  #menu ul li div .icon {
+    box-shadow: none;
+    background: none;
+    /* display: none; */
+  }
+  #menu ul li div a,
+  #menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #menu li label {
+    margin-left: 10px;
+  }
+  #menu ul li:hover .icon {
+    color: white;
+    transition: all 0.5s ease;
+    background: none;
+  }
+
+  #menu div label {
+    width: 150px;
+    visibility: visible;
+    position: relative;
+    margin-left: 5px;
+    z-index: 1;
+  }
+
+  #menu ul li:hover label {
+    padding: 0;
+    margin-left: 0;
+    border-radius: 3px;
+    color: white;
+    background: none;
+  }
+
+  #menu label::after {
+    position: absolute;
+    border: none;
+  }
+
+  header .header-user-settings {
+    display: none;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    height: 58px;
+  }
+
+  header .btn-menu-slider {
+    display: block;
+  }
+  #container-body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes menu-slider-show {
+    from {
+      left: -500px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes menu-slider-hide {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -500px;
+    }
+  }
+}

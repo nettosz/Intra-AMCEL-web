@@ -1,0 +1,49 @@
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:deleteVideo, Line: 60
+Error:An exception occurred while executing 'DELETE FROM videos WHERE sssssss = ?' with params ["9"]:
+
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sssssss' in 'where clause'
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:deleteVideo, Line: 60
+Error:An exception occurred while executing 'DELETE FROM videos WHERE sssssss = ?' with params ["9"]:
+
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sssssss' in 'where clause'
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:deleteVideo, Line: 60
+Error:An exception occurred while executing 'DELETE FROM videos WHERE sssssss = ?' with params ["9"]:
+
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sssssss' in 'where clause'
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:deleteVideo, Line: 60
+Error:An exception occurred while executing 'DELETE FROM videos WHERE sssssss = ?' with params ["9"]:
+
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sssssss' in 'where clause'
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["Span", "", 8, "https:\/\/youtu.be\/uIzUKBfnvmc", "2"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_USUARIO` FOREIGN KEY (`id_usuario`) REFERENCES `users` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["Span", "...", 8, "https:\/\/youtu.be\/uIzUKBfnvmc", "2"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_USUARIO` FOREIGN KEY (`id_usuario`) REFERENCES `users` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 49
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, id_usuario) VALUES(?, ?, ?, ?, ?)' with params ["Span", "...", 8, "https:\/\/youtu.be\/uIzUKBfnvmc", "2"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`intra_amcel`.`videos`, CONSTRAINT `FK_USUARIO` FOREIGN KEY (`id_usuario`) REFERENCES `users` (`id`))
+<<<<<<<<< End Error >>>>>>>>>>
+

@@ -1,0 +1,242 @@
+<div class="container-search">
+  <form>
+    <div class="search">
+      <label>
+        <input class="form-control" type="text" placeholder="Pesquisar por palavra passe" />
+        <i class="fa fa-search"> </i>
+      </label>
+    </div>
+  </form>
+</div>
+
+<div class="menu-container">
+
+  <section class="menu-options">
+
+    <?php if (!empty($_SESSION['user'])) : ?>
+      <a href="<?= BASE_URL ?>usuario/perfil" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/user.png" alt="user" />
+        <label> PERFIL </label>
+      </a>
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '6',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '6',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?= BASE_URL ?>cargos" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/cargos.png" alt="user" />
+        <label> CARGOS </label>
+      </a>
+
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '7',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '7',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?= BASE_URL ?>departamento" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/departamentos.png" alt="user" />
+        <label> DEPARTAMENTOS </label>
+      </a>
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '4',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '4',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?= BASE_URL ?>ramais-contatos" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/fone.png" alt="user" />
+        <label> RAMAL </label>
+      </a>
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '4',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '8',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?= BASE_URL ?>politicas" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/politicas.png" alt="user" />
+        <label> POLITICAS </label>
+      </a>
+    <?php endif; ?>
+
+
+    <a href="#" class="menu-item">
+      <img src="<?= BASE_URL ?>assets/imgs/security.png" alt="user" />
+      <label> LGPD </label>
+    </a>
+
+    <a href="#" class="menu-item">
+      <img src="<?= BASE_URL ?>assets/imgs/book.png" alt="user" />
+      <label> PROCEDIMENTO DEPARTAMENTAL </label>
+    </a>
+
+
+    <?php if (!empty($permi[0]) && $permi[0]['tp_perfil'] !== 'V') : ?>
+      <a href="<?php BASE_URL; ?>admin/home" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/admin.png" alt="user" />
+        <label> ADMIN </label>
+      </a>
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '3',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '3',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?php BASE_URL; ?>agendamento-salas" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/salas.png" alt="user" />
+        <label> AGENDAMENTO SALAS </label>
+      </a>
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '1',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '1',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?php BASE_URL; ?>base-conhecimento" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/base.png" alt="user" />
+        <label> BASE CONHECIMENTO </label>
+      </a>
+    <?php endif; ?>
+
+    <?php if (!empty($permi[0]) && in_array(
+      [
+        'cod_perfil' => '50',
+        'cod_modulo' => '2',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'V'
+      ],
+      $permi
+    ) || in_array(
+      [
+        'cod_modulo' => '2',
+        'cod_modulo_opcao' => '4',
+        'tp_perfil' => 'F'
+      ],
+      $permi
+    )) :
+    ?>
+      <a href="<?php BASE_URL; ?>videos" class="menu-item">
+        <img src="<?= BASE_URL ?>assets/imgs/videos.png" alt="user" />
+        <label> VIDEOS EDUCATIVOS </label>
+      </a>
+    <?php endif; ?>
+
+  </section>
+</div>
+
+
+<div class="container-slider" style="margin-bottom: 80px;">
+  <div class="title">
+    <h3>Notícias</h3>
+  </div>
+
+  <div class="wrapper-slides">
+    <div class="swiper-container mySwiper" style="margin: 10px;">
+      <div class="swiper-wrapper">
+        <?php foreach ($slide1 as $s) : ?>
+          <a href="<?= $s['link']; ?>" class="swiper-slide" target="_blank">
+            <img style="width: 100%; height: 320px" src="assets/imgs/noticias/<?= $s['nome_arquivo'] ?>" alt="" />
+            <h4><?= $s['titulo'] ?></h4>
+          </a>
+        <?php endforeach; ?>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="swiper-container mySwiper1" style="margin: 10px;">
+      <div class="swiper-wrapper">
+        <?php foreach ($slide2 as $s) : ?>
+          <a href="<?= $s['link']; ?>" class="swiper-slide" target="_blank">
+            <img style="width: 100%; height: 320px" src="assets/imgs/noticias/<?= $s['nome_arquivo'] ?>" alt="" />
+            <h4><?= $s['titulo'] ?></h4>
+          </a>
+        <?php endforeach; ?>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>

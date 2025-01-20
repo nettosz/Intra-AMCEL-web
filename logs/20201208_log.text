@@ -1,0 +1,7 @@
+<<<<<<<<< Begin Error >>>>>>>>>>
+Model:src\Models\videoModel, Func:setVideo, Line: 60
+Error:An exception occurred while executing 'INSERT INTO videos (nome, descricao, cod_sub_categoria, url, ids_usuario) VALUES(?, ?, ?, ?, ?)' with params ["Entendendo Como funciona a internet", ".......", 8, "d", "1"]:
+
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ids_usuario' in 'field list'
+<<<<<<<<< End Error >>>>>>>>>>
+

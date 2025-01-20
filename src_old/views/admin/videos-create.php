@@ -1,0 +1,131 @@
+<div class="container-baseconhecimento">
+  <h4> Videos - Criar</h4>
+  <hr />
+  <form action="" method="post" id="form-base">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <label> Titulo: </label>
+          <input class="form-control" name="Titulo" id="titulo" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <label> URL: </label>
+          <input class="form-control" name="url" id="url" />
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label for=""> Categoria</label>
+          <select class="form-control categoria" name="categoria" id="categoria">
+            <option value="0"> Selection...</option>
+          </select>
+          <br />
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+            Cadastrar
+          </button>
+        </div>
+        <div class="col-md-3">
+          <label for=""> Sub Categoria </label>
+          <select class="form-control" name="sub-categoria" id="sub-categoria">
+            <option value="0"> Selecionar...</option>
+          </select>
+          <br />
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sub-categoria">
+            Cadastrar
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <label> Descrição: </label>
+          <textarea style="height: 200px;" class="form-control" name="descricao" id="descricao"></textarea>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <button id="btn-salvar-base" type="submit" class="btn btn-success"> Salvar </button>
+  </form>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Castrado - Categoria </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <select class="form-control" name="categoria-modal" id="categoria-modal">
+          <option value="0"> Selecionar...</option>
+        </select>
+      </div>
+      <div id="options-modal">
+        <a id="categoria-criar" href="#salvar"> Criar </a>
+        <a id="categoria-deletar" href="#Deletar"> Deletar </a>
+        <a id="categoria-editar" href="#editar"> Editar </a>
+      </div>
+
+      <div class="modal-input" style="width: 50%;">
+        <label for=""> Nome </label>
+        <input id="inputOption" class="form-control" type="text" />
+        <button id="btn-salvar-categoria" style="margin-top: 10px !important" class="btn btn-primary"> Salvar </button>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Categoria -->
+<div class="modal fade" id="modal-sub-categoria" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Castrado - Sub-Categoria </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <label for=""> Categoria </label>
+        <select class="form-control" name="categoria-modal" id="categoria-modal-sub">
+          <option value="0"> Selecionar...</option>
+        </select>
+        <label for=""> Sub Categoria </label>
+        <select class="form-control" name="sub-categoria" id="sub-categoria-modal">
+          <option value=" 0"> Selecionar...</option>
+        </select>
+      </div>
+      <div id="options-modal">
+        <a id="sub-categoria-criar" href="#salvar-sub"> Criar </a>
+        <a id="sub-categoria-deletar" href="#Deletar-sub"> Deletar </a>
+        <a id="sub-categoria-editar" href="#editar-sub"> Editar </a>
+      </div>
+
+      <div class="modal-input-sub" style="width: 50%;">
+        <label for=""> Nome </label>
+        <input id="inputOptionSub" class="form-control" type="text" />
+        <button id="btn-salvar-sub-categoria" style="margin-top: 10px !important" class="btn btn-primary"> Salvar </button>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="<?= BASE_URL ?>assets/js/bundles/video.bundle.js"> </script>

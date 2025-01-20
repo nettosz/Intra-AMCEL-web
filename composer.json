@@ -1,0 +1,27 @@
+{
+  "name": "brinfo/intranet-amcel",
+  "description": "cria\u0000\u0000o de intranet amcel",
+  "authors": [
+    {
+      "name": "Mauricio Victor",
+      "email": "47354114+mauriciovictor@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "doctrine/dbal": "^2.10",
+    "vlucas/phpdotenv": "^5.0",
+    "firebase/php-jwt": "^5.2",
+    "league/oauth2-google": "^3.0",
+    "swiftmailer/swiftmailer": "^6.2",
+    "twig/twig": "^3.0",
+    "dompdf/dompdf": "^0.8.5"
+  },
+  "scripts": {
+    "doctrine": "./vendor/bin/doctrine-migrations.bat"
+  },
+  "autoload": {
+    "psr-4": {
+      "src\\": "src/"
+    }
+  }
+}

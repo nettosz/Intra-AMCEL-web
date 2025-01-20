@@ -1,0 +1,53 @@
+#menu {
+  background: linear-gradient(
+    to right,
+    rgba(129, 201, 177, 0.1),
+    rgba(145, 182, 147, 0.23)
+  );
+  box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.216);
+  padding: 10px;
+  position: fixed;
+  z-index: 100;
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu ul li {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#menu ul li div {
+  padding: 4px;
+}
+
+#menu ul li div .icon {
+  text-align: center;
+  font-size: 25px;
+  width: 40px;
+  color: white;
+  height: 40px;
+  background: linear-gradient(to right, rgb(83, 168, 140), #1ebe81);
+  border-radius: 50%;
+  padding: 4px;
+  margin: 0px 5px;
+  transition: all 0.5s ease;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.216);
+}
+
+#menu ul li:hover .icon {
+  color: white;
+  transition: all 0.5s ease;
+  background: linear-gradient(to right, rgb(83, 168, 140), #1ebe8180);
+}
+#menu ul li:hover div label {
+  color: rgb(4, 61, 6);
+  transition: all 0.2s ease;
+}

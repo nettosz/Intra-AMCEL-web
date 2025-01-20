@@ -1,0 +1,35 @@
+.container-table {
+  min-width: 200px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px !important;
+}
+.container-table {
+  font-size: 14px !important;
+}
+#options-modal {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#options-modal a {
+  padding: 0px 10px;
+}
+.modal-input,
+.modal-input-sub {
+  pointer-events: none;
+  opacity: 0.5;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.modal-input button,
+.modal-input-sub button {
+  padding-top: 10px !important;
+}
+
+.btn-salvar-base {
+  margin-bottom: 100px;
+}

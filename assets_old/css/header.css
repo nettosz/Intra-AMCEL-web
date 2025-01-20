@@ -1,0 +1,104 @@
+header {
+  /* grid-area: header; */
+  box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.216);
+  height: 80px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+header .header-items {
+  background: linear-gradient(to right, rgb(83, 168, 140), #1ebe81);
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+}
+
+header .header-search {
+  flex-basis: 300px;
+  vertical-align: middle;
+}
+
+header .header-info {
+  color: white;
+  text-align: center;
+}
+
+header .header-info ul,
+header .header-user-settings ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .header-info ul li {
+  height: 100%;
+  margin: 0px 1px;
+}
+
+header .header-info ul li div,
+header .header-user-settings ul li div {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  opacity: 0.8;
+  color: rgb(254, 255, 254);
+  font-weight: bold;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+header .header-info ul i:hover {
+  cursor: pointer;
+  color: rgb(130, 190, 106);
+}
+
+header .header-user-settings .header-user-item {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-user-settings ul li div {
+  font-size: 15px;
+}
+
+header .header-user-settings .header-user-logo {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  color: rgb(28, 83, 31);
+  font-size: 18px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(151, 206, 187), rgb(99, 235, 106));
+  box-shadow: 0px 5px 8px 1px rgba(18, 95, 3, 0.216);
+}
+
+header .header-logo img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 20%;
+  background: white;
+}
+
+header .btn-menu-slider {
+  color: white;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(151, 206, 187), rgb(99, 235, 106));
+  padding: 0 10px;
+  border-radius: 5px;
+  display: none;
+}
